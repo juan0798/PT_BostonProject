@@ -1,0 +1,57 @@
+
+  la estructura de la base de datos es la siguiente:
+  -entity/ (colección)
+    -entidad (documento con id unico)
+        -address: "direción de la entidad"
+        -name: "nombre de la entidad"
+        -type: "tipo de entidad"
+        -entrance/ (subcolección)
+            -portería (docuemnto con id unico)
+                -name: "nombre de la portería"
+                -registro/ (subcolección de registros)
+                    -entry: "timestamp si fue un evento tipo entrada si no null"
+                    -exit: "timestamp si fue un evento tipo salida si no null"
+                    -identification: "documento de identidad de la persona que entró o salió"
+                    -name: "nombre de la persona que entró o salió"
+                    -tipo: "entrada o salida"
+                    -usuarioId: "id del usuario que hizo el registro"
+
+
+-PTBostonProject/
+    -backend/
+        -node_modules/
+        -firebaseAdmin.js
+        -package-lock.json
+        -package.json
+        -server.js
+        -serviceAccountKey.json
+    -frontend/
+        -node_modules/
+        -public/
+        -src/
+            -assets/
+            -views/
+            -App.vue
+            -firebase.js
+            -main.js
+            -router.js 
+        -Babel.config.js
+        -jsconfig.json
+        -package-lock.json
+        -package.json
+        -README.md
+        -serviceAccountKey.json
+        -vue.config,js
+
+{ name: 'entityID', type: 'STRING' }
+{ name: 'entranceID', type: 'STRING' }
+{ name: 'entry', type: 'TIMESTAMP' },
+{ name: 'exit', type: 'TIMESTAMP' },
+{ name: 'identification', type: 'STRING' },
+{ name: 'name', type: 'STRING' },
+{ name: 'tipo', type: 'STRING' },
+{ name: 'registroID', type: 'STRING' },
+{ name: 'dato', type: 'TIMESTAMP' },
+
+
+

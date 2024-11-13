@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Firebase Admin SDK (claves sensibles)
+serviceAccountKey.json
+
+# BigQuery KEY
+GCloudServiceAccountKey.json
+
+# Archivos de configuración específicos del entorno
+.env
