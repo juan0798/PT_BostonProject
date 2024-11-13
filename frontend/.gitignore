@@ -1,3 +1,6 @@
 node_modules/
 
 .env
+
+# Firebase Admin SDK (claves sensibles)
+serviceAccountKey.json
